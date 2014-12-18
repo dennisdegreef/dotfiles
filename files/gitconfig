@@ -1,0 +1,12 @@
+[user]
+	name = Dennis de Greef
+	email = github@link0.net
+[core]
+	autocrlf = input
+	safecrlf = true
+	excludesfile = ~/.gitignore_global
+[push]
+	default = simple
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
