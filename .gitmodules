@@ -1,3 +1,6 @@
 [submodule "vendor/lsusb"]
 	path = vendor/lsusb
 	url = https://github.com/jlhonora/lsusb.git
+[submodule "vendor/rfcgrep"]
+	path = vendor/rfcgrep
+	url = https://github.com/dennisdegreef/rfcgrep.git
