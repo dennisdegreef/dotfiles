@@ -10,6 +10,8 @@ How to install
 ~ # git clone git@github.com:dennisdegreef/dotfiles.git ./.dotfiles
 [...]
 ~ # cd .dotfiles
-.dotfiles # php install.php
+~/.dotfiles # git submodule update --init
+[...]
+~/.dotfiles # php install.php
 ```
 
