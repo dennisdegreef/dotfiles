@@ -1,0 +1,3 @@
+[submodule "vendor/lsusb"]
+	path = vendor/lsusb
+	url = https://github.com/jlhonora/lsusb.git
