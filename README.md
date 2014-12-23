@@ -6,12 +6,9 @@ Configuration files setup for my home directory.
 How to install
 
 ```bash
-~ # cd ~
-~ # git clone git@github.com:dennisdegreef/dotfiles.git ./.dotfiles
+~ # git clone --recursive git@github.com:dennisdegreef/dotfiles.git ~/.dotfiles
 [...]
-~ # cd .dotfiles
-~/.dotfiles # git submodule update --init
-[...]
+~ # cd ~/.dotfiles
 ~/.dotfiles # php install.php
 ```
 
