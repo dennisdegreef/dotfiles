@@ -1,4 +1,4 @@
-.PHONY: all bin dotfiles etc
+.PHONY: all bin dotfiles etc vendor
 
 all: bin dotfiles etc
 
@@ -23,3 +23,6 @@ etc:
 	done
 #	systemctl --user daemon-reload
 #	sudo systemctl daemon-reload
+
+vendor:
+	git submodule update --remote
