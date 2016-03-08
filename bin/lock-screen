@@ -11,4 +11,4 @@ else
   echo "Error: no usable tool found to lock the screen."
   exit 1
 fi
-  
+
