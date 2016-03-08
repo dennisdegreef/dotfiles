@@ -9,6 +9,6 @@ How to install
 ~ # git clone --recursive git@github.com:dennisdegreef/dotfiles.git ~/.dotfiles
 [...]
 ~ # cd ~/.dotfiles
-~/.dotfiles # php install.php
+~/.dotfiles # make
 ```
 
