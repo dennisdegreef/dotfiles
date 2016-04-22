@@ -206,4 +206,9 @@ bindsym XF86AudioMute exec amixer sset Master toggle && killall -USR1 i3blocks
 bindsym XF86Mail exec thunderbird -compose
 bindsym XF86Explorer exec chromium
 
+# Screenshots
+bindsym $mod+Print exec xfce4-screenshooter --region -s $HOME/Pictures/screenshots
+
 exec --no-startup-id nm-applet
+exec --no-startup-id xrandr --output DVI-1 --auto --left-of DVI-0
+exec --no-startup-id pasystray # pulseaudio systray
