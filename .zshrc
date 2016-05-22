@@ -85,7 +85,7 @@ then
 	source $powerline_binding;
 fi;
 
-if [ $(which brew) ];
+if [ -x "$(command -v brew)" ];
 then
 	source "$(brew --prefix)/etc/profile.d/z.sh"
 fi
