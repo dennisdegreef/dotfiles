@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-DOTFILES=$(pwd);
+DOTFILES=$(pwd)/;
 SYMLINKS=${DOTFILES}/symlinks.txt
 
 if [[ ! -f $SYMLINKS ]];
