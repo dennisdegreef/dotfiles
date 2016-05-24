@@ -90,3 +90,34 @@ then
 	source "$(brew --prefix)/etc/profile.d/z.sh"
 fi
 
+
+# GPG configuration
+# Check for the gpg-agent socket, and set SSH_AUTH_SOCK and GPG_TTY
+# environment variables accordingly:
+if ! pgrep gpg-agent >/dev/null; then
+	gpg-agent \
+		-v \
+		--daemon \
+		--enable-ssh-support \
+		--log-file $HOME/.gnupg/gpg-agent.log \
+		--write-env-file=$HOME/.gnupg/gpg-agent-info.env
+fi
+
+if [[ -S "${HOME}/.gnupg/S.gpg-agent.ssh" ]]; then
+    export GPG_TTY=$(tty)
+    export GPG_TTY
+    if [[ ${SSH_AUTH_SOCK} != "${HOME}/.gnupg/S.gpg-agent.ssh" ]]; then
+        export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
+    fi
+    if [ -f "${HOME}/.gpg-agent-info" ]; then
+        . "${HOME}/.gpg-agent-info"
+        export GPG_AGENT_INFO
+    fi
+fi
+
+#: ${GNUPGHOME=$HOME/.gnupg}
+#GPG_AGENT_INFO=${GNUPGHOME}/S.gpg-agent:0:1;
+#export GPG_AGENT_INFO;
+#SSH_AUTH_SOCK=${GNUPGHOME}/S.gpg-agent.ssh
+
+alias gpg=gpg2
