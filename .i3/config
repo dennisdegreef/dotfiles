@@ -182,6 +182,12 @@ for_window [title="Calculator"] floating enable
 # PulseAudio Manager
 for_window [title="PulseAudio Manager"] floating enable
 
+# PulseAudio Volume Control
+for_window [title="Volume Control"] floating enable
+
+# QtPass
+for_window [title="QtPass"] floating enable
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
