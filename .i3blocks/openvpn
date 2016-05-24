@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if pgrep '^openvpn$' >/dev/null;
+then
+	ip addr show dev $BLOCK_INSTANCE | grep 'inet ' | awk '{print $2}'
+else
+	echo "vpn down";
+	echo "vpn down";
+	echo "#FF0000";
+fi
