@@ -212,3 +212,5 @@ bindsym $mod+Print exec xfce4-screenshooter --region -s $HOME/Pictures/screensho
 exec --no-startup-id nm-applet
 exec --no-startup-id xrandr --output DVI-1 --auto --left-of DVI-0
 exec --no-startup-id pasystray # pulseaudio systray
+exec --no-startup-id redshift  # f.lux
+exec --no-startup-id redshift-gtk
