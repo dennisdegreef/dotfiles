@@ -1,2 +1,4 @@
+.gitconfig:.gitconfig
+.gitignore_global:.gitignore_global
 bin:bin
 config/redshift.conf:.config/redshift.conf
